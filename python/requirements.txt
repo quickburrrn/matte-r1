@@ -1,0 +1,20 @@
+# Matematikk og symbolsk regning
+sympy
+numpy
+scipy
+
+# Plotting
+matplotlib
+
+# Interaktiv visualisering (valgfritt)
+plotly
+
+# Ligningsløser og numeriske metoder
+pandas
+
+# Jupyter Notebook
+notebook
+ipython
+
+# For integrasjon med latex og rendering
+jupyterlab
