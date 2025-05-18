@@ -41,3 +41,7 @@ make html
 
 #### pakker
 pip install matplotlib
+
+
+### Standardavik
+

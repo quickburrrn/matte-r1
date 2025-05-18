@@ -1,0 +1,72 @@
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+
+\title{Cheat Sheet: Standardavvik og Gjennomsnitt}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduksjon}
+Dette dokumentet gir en rask oversikt over hvordan man regner ut gjennomsnitt ($\mu$) og standardavvik ($\sigma$ og $s$), med eksempler og forklaringer.
+
+\section*{1. Gjennomsnitt ($\mu$)}
+\textbf{Formel for populasjonsgjennomsnitt:}
+\begin{equation}
+\mu = \frac{1}{n} \sum_{i=1}^{n} x_i
+\end{equation}
+
+\textbf{Eksempel:}\\
+Tall: 5, 7, 9, 4, 10\\
+\begin{align*}
+\mu &= \frac{5 + 7 + 9 + 4 + 10}{5} = \frac{35}{5} = 7
+\end{align*}
+
+\textbf{Forklaring:}\\
+Gjennomsnittet $\mu$ forteller hva verdiene i datasettet i snitt ligger på. Det er et mål på sentraltendens og brukes ofte i statistikk.
+
+\section*{2. Standardavvik for populasjon ($\sigma$)}
+\textbf{Formel:}
+\begin{equation}
+\sigma = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2 }
+\end{equation}
+
+\textbf{Eksempel:}\\
+Tall: 2, 4, 4, 4, 5, 5, 7, 9\\
+Gjennomsnitt $\mu = 5$\\
+\begin{align*}
+\sigma &= \sqrt{ \frac{1}{8} \left[(2-5)^2 + (4-5)^2 + \dots + (9-5)^2 \right] } \\
+       &= \sqrt{4} = 2
+\end{align*}
+
+\textbf{Forklaring:}\\
+Standardavviket $\sigma$ måler spredningen i hele populasjonen, altså hvor mye dataene varierer rundt gjennomsnittet $\mu$.
+
+\section*{3. Standardavvik for utvalg ($s$)}
+\textbf{Formel:}
+\begin{equation}
+s = \sqrt{ \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2 }
+\end{equation}
+
+\textbf{Eksempel:}\\
+Tall: 4, 8, 6, 5, 3\\
+Gjennomsnitt $\bar{x} = 5.2$\\
+\begin{align*}
+s &= \sqrt{ \frac{1}{4} \left[(4-5.2)^2 + (8-5.2)^2 + \dots + (3-5.2)^2 \right] } \\
+  &\approx \sqrt{3.7} \approx 1.92
+\end{align*}
+
+\textbf{Forklaring:}\\
+Utvalgsstandardavvik $s$ brukes når vi kun har et utvalg og ikke hele populasjonen. $n-1$ brukes i nevneren som en korreksjon (Bessels korreksjon) for å få et mer nøyaktig estimat.
+
+\end{document}
