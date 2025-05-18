@@ -1,0 +1,1 @@
+# Dette er en oppgave hvor man skal lage en logisisk modell med et datasett
